@@ -7,27 +7,42 @@
 }
 
 :root {
-  --dark-grey: #0a0a23;
+  --light-blue: #b5b5f8;
   --light-grey: #f5f6f7;
   --white: #ffffff;
   --black: #000;
 }
 
 body {
-  background-color: var(--dark-grey);
+  background-color: var(--white);
   text-align: center;
   padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .title,
 .options-label,
-.team-stats,
+.team-stats {
+  color: var(--black);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
 footer {
-  color: var(--white);
+  color: var(--black);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+#players {
+  padding: 5px;
+  font-size: 16px;
 }
 
 .title {
   margin: 1.3rem 0;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .team-stats {
@@ -50,11 +65,12 @@ footer {
 }
 
 .player-card {
-  background-color: var(--light-grey);
+  background-color: var(--light-blue);
   padding: 1.3rem;
   margin: 1.2rem;
   width: 300px;
   border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
